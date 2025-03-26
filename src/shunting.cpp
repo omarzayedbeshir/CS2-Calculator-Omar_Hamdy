@@ -46,6 +46,15 @@ namespace ShuntYard
                 cerr << "Invalid character ignored: " << expr[i] << endl;
         }
 
+        for (int i = 0; i < tokens.size() - 1; i++)
+        {
+            if (
+                (isdigit(tokens[i][0]) && tokens[i + 1] == "(") ||
+                (tokens[i] == ")" && isdigit(tokens[i + 1][0]))
+            )
+                tokens.insert(tokens.begin() + i + 1, "*");
+        }
+        
         return tokens;
     }
 
@@ -66,6 +75,14 @@ ParenthesisAssociativity getAssociativity(const string& op)
 
 vector<string> infixToPostfix(const vector<string>& tokens)
 {
+    for (int i = 1; i < tokens.size(); i++)
+    {
+        if (isdigit(tokens[i - 1][0]) && tokens[i] == "(")
+            throw invalid_argument("Missing operator between number and \'(\'.");
+        if (tokens[i - 1] == ")" && isdigit(tokens[i][0]))
+            throw invalid_argument("Missing operator between \')\' and number.");
+    }
+
     vector<string> output;
     stack<string> opStack;
 

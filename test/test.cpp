@@ -6,6 +6,8 @@ using namespace std;
 
 int main() {
 
+    int x, y;
+
     while (true) {
 
         int choice;
@@ -26,70 +28,68 @@ int main() {
 
         switch(choice) {
             case 1:
-                int x, y;
                 cout << "Enter the first number: ";
                 cin >> x;
-                
+
                 cout << "Enter the second number: ";
                 cin >> y;
                 cout << "Result: " << add(x, y) << endl;
                 break;
             case 2:
-                int x, y;
+
                 cout << "Enter the first number: ";
                 cin >> x;
-                
+
                 cout << "Enter the second number: ";
                 cin >> y;
                 cout << "Result: " << subtract(x, y) << endl;
                 break;
             case 3:
-                int x, y;
                 cout << "Enter the first number: ";
                 cin >> x;
-                
+
                 cout << "Enter the second number: ";
                 cin >> y;
                 cout << "Result: " << multiply(x, y) << endl;
                 break;
             case 4:
-                int x, y;
+
                 cout << "Enter the first number: ";
                 cin >> x;
-                
+
                 cout << "Enter the second number: ";
                 cin >> y;
                 cout << "Result: " << divide(x, y) << endl;
                 break;
             case 5:
-                int x;
+
                 cout << "Enter the number: ";
                 cin >> x;
                 cout << "Result: " << factorial(x) << endl;
                 break;
             case 6:
-                int x, y;
+
                 cout << "Enter the first number: ";
                 cin >> x;
-                
+
                 cout << "Enter the second number: ";
                 cin >> y;
                 cout << "Result: " << GCD(x, y) << endl;
                 break;
             case 7:
-                int x, y;
+
                 cout << "Enter the first number: ";
                 cin >> x;
-                
+
                 cout << "Enter the second number: ";
                 cin >> y;
                 cout << "Result: " << LCM(x, y) << endl;
                 break;
             case 8:
-                int x, y;
+
                 cout << "Enter the starting number: ";
                 cin >> x;
-                
+
                 cout << "Enter the ending number: ";
                 cin >> y;
                 cout << "Result: " << random(x, y) << endl;
@@ -98,7 +98,7 @@ int main() {
                 cout << "Invalid operation!" << endl;
                 break;
         }
-        
+
     }
     return 0;
 }

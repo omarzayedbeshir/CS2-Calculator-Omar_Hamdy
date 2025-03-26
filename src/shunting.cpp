@@ -12,6 +12,9 @@ using namespace std;
 
 namespace ShuntYard
 {
+    // As adapted rom:
+    // https://github.com/ozgekaracam/Shunting-Yard/blob/main/shunting_yard.cpp
+
     vector<string> tokenize(const string& expr)
     {
         vector<string> tokens;
@@ -45,7 +48,6 @@ namespace ShuntYard
 
         return tokens;
     }
-}
 
 int getPrecedence(const string& op)
 {
@@ -123,6 +125,8 @@ vector<string> infixToPostfix(const vector<string>& tokens)
     }
 
     return output;
+}
+
 }
 
 #endif

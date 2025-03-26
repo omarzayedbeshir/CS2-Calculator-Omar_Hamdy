@@ -1,0 +1,4 @@
+/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild/CMakeFiles/shunt-test.dir
+/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild/CMakeFiles/test.dir
+/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild/CMakeFiles/edit_cache.dir
+/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild/CMakeFiles/rebuild_cache.dir

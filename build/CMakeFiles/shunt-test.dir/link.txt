@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/shunt-test.dir/test/shunt-test.cpp.o CMakeFiles/shunt-test.dir/src/calculator.cpp.o CMakeFiles/shunt-test.dir/src/shunting.cpp.o -o shunt-test 

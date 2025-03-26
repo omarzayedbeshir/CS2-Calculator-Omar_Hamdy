@@ -25,6 +25,9 @@ namespace ShuntYard
     // Purpose: changes the string of inputs into a more interpretable version
     // to be analyzed by another function (this is with respect to mathematical
     // precedence.)
+
+    double evaluatePostfix(const vector<string>& postFix);
+    // Purpose: returns the value of the postfix expression after evaluation.
 }
 
 #endif

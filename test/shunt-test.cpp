@@ -16,8 +16,10 @@ int main()
     cout << "Postfix notation: ";
     for (const string& s : postfix)
         cout << s << " ";
-
     cout <<  endl;
+
+    cout << "Result: "
+         << evaluatePostfix(postfix) << endl;
 
     return 0;
 }

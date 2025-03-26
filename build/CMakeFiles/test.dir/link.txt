@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/test.dir/test/test.cpp.o CMakeFiles/test.dir/src/calculator.cpp.o -o test 
+/usr/bin/c++ CMakeFiles/test.dir/tests/test.cpp.o CMakeFiles/test.dir/src/calculator.cpp.o -o test 

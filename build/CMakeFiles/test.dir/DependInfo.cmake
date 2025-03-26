@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/src/calculator.cpp" "CMakeFiles/test.dir/src/calculator.cpp.o" "gcc" "CMakeFiles/test.dir/src/calculator.cpp.o.d"
-  "/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/test/test.cpp" "CMakeFiles/test.dir/test/test.cpp.o" "gcc" "CMakeFiles/test.dir/test/test.cpp.o.d"
+  "/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/tests/test.cpp" "CMakeFiles/test.dir/tests/test.cpp.o" "gcc" "CMakeFiles/test.dir/tests/test.cpp.o.d"
   )
 
 # Targets to which this target links.

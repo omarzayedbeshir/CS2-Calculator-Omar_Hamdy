@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/shunt-test.dir/src/calculator.cpp.o.d"
   "CMakeFiles/shunt-test.dir/src/shunting.cpp.o"
   "CMakeFiles/shunt-test.dir/src/shunting.cpp.o.d"
-  "CMakeFiles/shunt-test.dir/test/shunt-test.cpp.o"
-  "CMakeFiles/shunt-test.dir/test/shunt-test.cpp.o.d"
+  "CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.o"
+  "CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.o.d"
   "shunt-test"
   "shunt-test.pdb"
 )

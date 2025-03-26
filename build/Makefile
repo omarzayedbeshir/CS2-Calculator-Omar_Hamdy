@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild
+CMAKE_BINARY_DIR = /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild/CMakeFiles /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/build/CMakeFiles /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -193,53 +193,53 @@ src/shunting.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shunt-test.dir/build.make CMakeFiles/shunt-test.dir/src/shunting.cpp.s
 .PHONY : src/shunting.cpp.s
 
-test/shunt-test.o: test/shunt-test.cpp.o
-.PHONY : test/shunt-test.o
+tests/shunt-test.o: tests/shunt-test.cpp.o
+.PHONY : tests/shunt-test.o
 
 # target to build an object file
-test/shunt-test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shunt-test.dir/build.make CMakeFiles/shunt-test.dir/test/shunt-test.cpp.o
-.PHONY : test/shunt-test.cpp.o
+tests/shunt-test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shunt-test.dir/build.make CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.o
+.PHONY : tests/shunt-test.cpp.o
 
-test/shunt-test.i: test/shunt-test.cpp.i
-.PHONY : test/shunt-test.i
+tests/shunt-test.i: tests/shunt-test.cpp.i
+.PHONY : tests/shunt-test.i
 
 # target to preprocess a source file
-test/shunt-test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shunt-test.dir/build.make CMakeFiles/shunt-test.dir/test/shunt-test.cpp.i
-.PHONY : test/shunt-test.cpp.i
+tests/shunt-test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shunt-test.dir/build.make CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.i
+.PHONY : tests/shunt-test.cpp.i
 
-test/shunt-test.s: test/shunt-test.cpp.s
-.PHONY : test/shunt-test.s
+tests/shunt-test.s: tests/shunt-test.cpp.s
+.PHONY : tests/shunt-test.s
 
 # target to generate assembly for a file
-test/shunt-test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shunt-test.dir/build.make CMakeFiles/shunt-test.dir/test/shunt-test.cpp.s
-.PHONY : test/shunt-test.cpp.s
+tests/shunt-test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shunt-test.dir/build.make CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.s
+.PHONY : tests/shunt-test.cpp.s
 
-test/test.o: test/test.cpp.o
-.PHONY : test/test.o
+tests/test.o: tests/test.cpp.o
+.PHONY : tests/test.o
 
 # target to build an object file
-test/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/test.cpp.o
-.PHONY : test/test.cpp.o
+tests/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cpp.o
+.PHONY : tests/test.cpp.o
 
-test/test.i: test/test.cpp.i
-.PHONY : test/test.i
+tests/test.i: tests/test.cpp.i
+.PHONY : tests/test.i
 
 # target to preprocess a source file
-test/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/test.cpp.i
-.PHONY : test/test.cpp.i
+tests/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cpp.i
+.PHONY : tests/test.cpp.i
 
-test/test.s: test/test.cpp.s
-.PHONY : test/test.s
+tests/test.s: tests/test.cpp.s
+.PHONY : tests/test.s
 
 # target to generate assembly for a file
-test/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/test/test.cpp.s
-.PHONY : test/test.cpp.s
+tests/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test.cpp.s
+.PHONY : tests/test.cpp.s
 
 # Help Target
 help:
@@ -257,12 +257,12 @@ help:
 	@echo "... src/shunting.o"
 	@echo "... src/shunting.i"
 	@echo "... src/shunting.s"
-	@echo "... test/shunt-test.o"
-	@echo "... test/shunt-test.i"
-	@echo "... test/shunt-test.s"
-	@echo "... test/test.o"
-	@echo "... test/test.i"
-	@echo "... test/test.s"
+	@echo "... tests/shunt-test.o"
+	@echo "... tests/shunt-test.i"
+	@echo "... tests/shunt-test.s"
+	@echo "... tests/test.o"
+	@echo "... tests/test.i"
+	@echo "... tests/test.s"
 .PHONY : help
 
 

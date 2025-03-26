@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild
+CMAKE_BINARY_DIR = /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/shunt-test.dir/depend.make
@@ -69,24 +69,24 @@ include CMakeFiles/shunt-test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/shunt-test.dir/flags.make
 
-CMakeFiles/shunt-test.dir/test/shunt-test.cpp.o: CMakeFiles/shunt-test.dir/flags.make
-CMakeFiles/shunt-test.dir/test/shunt-test.cpp.o: ../test/shunt-test.cpp
-CMakeFiles/shunt-test.dir/test/shunt-test.cpp.o: CMakeFiles/shunt-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/shunt-test.dir/test/shunt-test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shunt-test.dir/test/shunt-test.cpp.o -MF CMakeFiles/shunt-test.dir/test/shunt-test.cpp.o.d -o CMakeFiles/shunt-test.dir/test/shunt-test.cpp.o -c /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/test/shunt-test.cpp
+CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.o: CMakeFiles/shunt-test.dir/flags.make
+CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.o: ../tests/shunt-test.cpp
+CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.o: CMakeFiles/shunt-test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.o -MF CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.o.d -o CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.o -c /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/tests/shunt-test.cpp
 
-CMakeFiles/shunt-test.dir/test/shunt-test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shunt-test.dir/test/shunt-test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/test/shunt-test.cpp > CMakeFiles/shunt-test.dir/test/shunt-test.cpp.i
+CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/tests/shunt-test.cpp > CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.i
 
-CMakeFiles/shunt-test.dir/test/shunt-test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shunt-test.dir/test/shunt-test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/test/shunt-test.cpp -o CMakeFiles/shunt-test.dir/test/shunt-test.cpp.s
+CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/tests/shunt-test.cpp -o CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.s
 
 CMakeFiles/shunt-test.dir/src/calculator.cpp.o: CMakeFiles/shunt-test.dir/flags.make
 CMakeFiles/shunt-test.dir/src/calculator.cpp.o: ../src/calculator.cpp
 CMakeFiles/shunt-test.dir/src/calculator.cpp.o: CMakeFiles/shunt-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/shunt-test.dir/src/calculator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/shunt-test.dir/src/calculator.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shunt-test.dir/src/calculator.cpp.o -MF CMakeFiles/shunt-test.dir/src/calculator.cpp.o.d -o CMakeFiles/shunt-test.dir/src/calculator.cpp.o -c /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/src/calculator.cpp
 
 CMakeFiles/shunt-test.dir/src/calculator.cpp.i: cmake_force
@@ -100,7 +100,7 @@ CMakeFiles/shunt-test.dir/src/calculator.cpp.s: cmake_force
 CMakeFiles/shunt-test.dir/src/shunting.cpp.o: CMakeFiles/shunt-test.dir/flags.make
 CMakeFiles/shunt-test.dir/src/shunting.cpp.o: ../src/shunting.cpp
 CMakeFiles/shunt-test.dir/src/shunting.cpp.o: CMakeFiles/shunt-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/shunt-test.dir/src/shunting.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/shunt-test.dir/src/shunting.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/shunt-test.dir/src/shunting.cpp.o -MF CMakeFiles/shunt-test.dir/src/shunting.cpp.o.d -o CMakeFiles/shunt-test.dir/src/shunting.cpp.o -c /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/src/shunting.cpp
 
 CMakeFiles/shunt-test.dir/src/shunting.cpp.i: cmake_force
@@ -113,19 +113,19 @@ CMakeFiles/shunt-test.dir/src/shunting.cpp.s: cmake_force
 
 # Object files for target shunt-test
 shunt__test_OBJECTS = \
-"CMakeFiles/shunt-test.dir/test/shunt-test.cpp.o" \
+"CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.o" \
 "CMakeFiles/shunt-test.dir/src/calculator.cpp.o" \
 "CMakeFiles/shunt-test.dir/src/shunting.cpp.o"
 
 # External object files for target shunt-test
 shunt__test_EXTERNAL_OBJECTS =
 
-shunt-test: CMakeFiles/shunt-test.dir/test/shunt-test.cpp.o
+shunt-test: CMakeFiles/shunt-test.dir/tests/shunt-test.cpp.o
 shunt-test: CMakeFiles/shunt-test.dir/src/calculator.cpp.o
 shunt-test: CMakeFiles/shunt-test.dir/src/shunting.cpp.o
 shunt-test: CMakeFiles/shunt-test.dir/build.make
 shunt-test: CMakeFiles/shunt-test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable shunt-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable shunt-test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/shunt-test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -137,6 +137,6 @@ CMakeFiles/shunt-test.dir/clean:
 .PHONY : CMakeFiles/shunt-test.dir/clean
 
 CMakeFiles/shunt-test.dir/depend:
-	cd /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/mybuild/CMakeFiles/shunt-test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/build /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/build /home/hamdy/CS2lab/assignments/assignment1/CS2-Calculator-Omar_Hamdy/build/CMakeFiles/shunt-test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/shunt-test.dir/depend
 

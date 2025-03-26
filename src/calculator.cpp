@@ -1,13 +1,9 @@
-#pragma once
 #include "../include/calculator.h"
 #include <iostream>
 #include <random>
 #include <ctime>
 #include <stdexcept>
-
 using namespace std;
-
-srand(time(0));
 
 double subtract(double x, double y) { return (x - y); }
 
@@ -65,6 +61,7 @@ int random(int start, int end) {
     if (end < start)
         throw invalid_argument("Invalid range: End must be greater than start!");
 
+	srand(static_cast<unsigned int>(time(NULL)));
 	return rand() % (end - start + 1) + start;
 
     return 0;

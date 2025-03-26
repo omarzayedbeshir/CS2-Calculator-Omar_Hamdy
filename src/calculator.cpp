@@ -9,9 +9,7 @@ using namespace std;
 
 srand(time(0));
 
-double subtract(double x, double y) {
-    return x - y;
-}
+double subtract(double x, double y) { return (x - y); }
 
 double add(double x, double y) { return (x + y); }
 
@@ -19,6 +17,9 @@ double multiply(double x, double y) { return (x * y); }
 
 int factorial(int x)
 {
+    if (x < 0)
+        throw invalid_argument("Factorial of negative number is undefined");
+
 	if (x == 0 || x == 1)
 		return 1;
 
@@ -27,21 +28,23 @@ int factorial(int x)
 
 int LCM(int x, int y)
 {
-	int greater = max(a, b);
-	int smaller = min(a, b);
+    if (x == 0 || y == 0)
+        throw invalid_argument("LCM of zero is undefined");
+
+	int greater = max(x, y);
+	int smaller = min(x, y);
 	for (int i = greater; ; i+= greater)
-		if (i % smallest == 0)
+		if (i % smaller == 0)
 			return i;
 }
 
-double divide(double x, double y) {
-    try {
-        if (y == 0)
-            throw runtime_error("Division by zero not allowed!");
-        return x / y;
-    } catch(const runtime_error& e) {
-        cout << e.what() << endl;
-    }
+double divide(double x, double y)
+{
+    if (y == 0)
+        throw runtime_error("Division by zero not allowed!");
+
+    return (x / y);
+
     return 0;
 }
 
@@ -59,12 +62,10 @@ int GCD(int x, int y) {
 }
 
 int random(int start, int end) {
-    try {
-        if (end < start)
-            throw runtime_error("End must be greater than start!");
-        return rand() % (end - start + 1) + start;
-    } catch(const runtime_error& e) {
-        cout << e.what() << endl;
-    }
+    if (end < start)
+        throw invalid_argument("Invalid range: End must be greater than start!");
+
+	return rand() % (end - start + 1) + start;
+
     return 0;
 }

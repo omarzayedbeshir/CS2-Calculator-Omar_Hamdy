@@ -29,7 +29,7 @@ int GCD(int x, int y);
 
 int LCM(int x, int y);
 // Precondition: numeric integer inputs
-// Purpose: returns lowest common multipl
+// Purpose: returns lowest common multiple
 // Postcondition: In case x < 0 or y < 0, throws an exception
 
 int random(int start, int end);

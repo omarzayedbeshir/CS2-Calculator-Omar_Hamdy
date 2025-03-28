@@ -5,7 +5,6 @@
 #include "../include/shunting.h"
 
 using namespace std;
-using namespace ShuntYard;
 
 #define COLOR_GREEN "\033[32m"
 #define COLOR_RED "\033[31m"

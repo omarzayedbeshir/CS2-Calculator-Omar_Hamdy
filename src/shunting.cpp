@@ -1,5 +1,4 @@
-#ifndef SHUNTING_CPP
-#define SHUNTING_CPP
+#pragma once
 #include <iostream>
 #include <string>
 #include <vector>
@@ -290,5 +289,3 @@ namespace ShuntYard
         return operands.top();
     }
 }
-
-#endif

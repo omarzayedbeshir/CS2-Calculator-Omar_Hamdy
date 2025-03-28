@@ -1,12 +1,17 @@
 #include <iostream>
 #include "../include/calculator.h"
+#include "../include/shunting.h"
+#include <vector>
+#include <string>
 
 using namespace std;
 
 
 int main() {
-
+    
     int x, y;
+    string exp;
+    vector<string> tokens, postfix;
 
     while (true) {
 
@@ -19,11 +24,12 @@ int main() {
         cout << "6- GCD" << endl;
         cout << "7- LCM" << endl;
         cout << "8- Random" << endl;
-        cout << "9- Exit" << endl;
+        cout << "9- Expression Parser" << endl;
+        cout << "10- Exit" << endl;
         cout << "Enter your desired operation number: ";
         cin >> choice;
 
-        if (choice == 9)
+        if (choice == 10)
             break;
 
         switch(choice) {
@@ -93,6 +99,14 @@ int main() {
                 cout << "Enter the ending number: ";
                 cin >> y;
                 cout << "Result: " << random(x, y) << endl;
+                break;
+            case 9:
+                cout << "Enter an expresion to evaluate: ";
+                getline(cin, exp);
+                tokens = ShuntYard::tokenize(exp);
+                postfix = ShuntYard::infixToPostfix(tokens);
+                double result = ShuntYard::evaluatePostfix(postfix);
+                cout << "Result: " << result << endl;
                 break;
             default:
                 cout << "Invalid operation!" << endl;

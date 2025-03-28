@@ -1,33 +1,26 @@
-#ifndef SHUNTING_H
-#define SHUNTING_H
+#pragma once
 #include <iostream>
 #include <vector>
 using namespace std;
 
 enum ParenthesisAssociativity { LEFT, RIGHT };
 
-namespace ShuntYard
-{
+/* Purpose: Changing a string of numeric operational inputs into tokens
+   for further analysis. */
+vector<string> tokenize(const string& expr);
 
-    vector<string> tokenize(const string& expr);
-    // Purpose: Changing a string of numeric operational inputs into tokens
-    // for further analysis
+/* Purpose: Returns the precedence of operation with respect to mathematical
+   representations. */
+int getPrecedence(const string& op);
 
-    int getPrecedence(const string& op);
-    // Purpose: Returns the precedence of operation with respect to mathematical
-    // representations.
+/* Purpose: Returns an association of parenthesis (i.e., for example 5 (3)
+   would yield 5 * 3) */
+ParenthesisAssociativity getAssociativity(const string& op);
 
-    ParenthesisAssociativity getAssociativity(const string& op);
-    // Purpose: Returns an association of parenthesis (i.e., for example 5 (3)
-    // would yield 5 * 3)
+/* Purpose: changes the string of inputs into a more interpretable version
+   to be analyzed by another function (this is with respect to mathematical
+   precedence.) */
+vector<string> infixToPostfix(const vector<string>& token);
 
-    vector<string> infixToPostfix(const vector<string>& token);
-    // Purpose: changes the string of inputs into a more interpretable version
-    // to be analyzed by another function (this is with respect to mathematical
-    // precedence.)
-
-    double evaluatePostfix(const vector<string>& postFix);
-    // Purpose: returns the value of the postfix expression after evaluation.
-}
-
-#endif
+// Purpose: returns the value of the postfix expression after evaluation.
+double evaluatePostfix(const vector<string>& postFix);

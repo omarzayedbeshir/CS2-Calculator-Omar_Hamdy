@@ -103,9 +103,9 @@ int main() {
             case 9:
                 cout << "Enter an expresion to evaluate: ";
                 getline(cin, exp);
-                tokens = ShuntYard::tokenize(exp);
-                postfix = ShuntYard::infixToPostfix(tokens);
-                double result = ShuntYard::evaluatePostfix(postfix);
+                tokens = tokenize(exp);
+                postfix = infixToPostfix(tokens);
+                double result = evaluatePostfix(postfix);
                 cout << "Result: " << result << endl;
                 break;
             default:

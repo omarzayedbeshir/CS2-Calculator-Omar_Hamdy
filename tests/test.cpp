@@ -3,6 +3,7 @@
 #include "../include/shunting.h"
 #include <vector>
 #include <string>
+#include <limits>
 
 using namespace std;
 
@@ -27,7 +28,14 @@ int main() {
         cout << "9- Expression Parser" << endl;
         cout << "10- Exit" << endl;
         cout << "Enter your desired operation number: ";
-        cin >> choice;
+        
+        if (!(cin >> choice))
+        {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cerr << "Invalid input! Enter a number.\n";
+            continue;
+        }
 
         if (choice == 10)
             break;
@@ -101,13 +109,16 @@ int main() {
                 cout << "Result: " << random(x, y) << endl;
                 break;
             case 9:
-                cout << "Enter an expresion to evaluate: ";
-                getline(cin, exp);
-                tokens = tokenize(exp);
-                postfix = infixToPostfix(tokens);
-                double result = evaluatePostfix(postfix);
-                cout << "Result: " << result << endl;
-                break;
+                {
+                    cout << "Enter an expresion to evaluate: ";
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                    getline(cin, exp);
+                    tokens = tokenize(exp);
+                    postfix = infixToPostfix(tokens);
+                    double result = evaluatePostfix(postfix);
+                    cout << "Result: " << result << endl;
+                    break;
+                }
             default:
                 cout << "Invalid operation!" << endl;
                 break;

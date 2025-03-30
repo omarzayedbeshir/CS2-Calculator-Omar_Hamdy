@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
 include_directories(include)
 add_executable(shunt-test tests/shunt-test.cpp src/calculator.cpp src/shunting.cpp)
-add_executable(test tests/test.cpp src/calculator.cpp)
+add_executable(test tests/test.cpp src/calculator.cpp src/shunting.cpp)

@@ -4,23 +4,29 @@
 using namespace std;
 
 enum ParenthesisAssociativity { LEFT, RIGHT };
+// Added for parenthesis distinctions.
 
-/* Purpose: Changing a string of numeric operational inputs into tokens
-   for further analysis. */
 vector<string> tokenize(const string& expr);
+// Precondtion: argument must be of type string and an unprocessed operation.
+// Purpose: Changing a string of numeric operational inputs into tokens
+//          for further analysis.
 
-/* Purpose: Returns the precedence of operation with respect to mathematical
-   representations. */
 int getPrecedence(const string& op);
+// Purpose: Returns the precedence of operation with respect to mathematical
+//          representations. It acts as a helper function.
 
-/* Purpose: Returns an association of parenthesis (i.e., for example 5 (3)
-   would yield 5 * 3) */
 ParenthesisAssociativity getAssociativity(const string& op);
+// Purpose: Returns an association of parenthesis (i.e., for example 5 (3)
+//          would yield 5 * 3). Acts as a helper function.
 
-/* Purpose: changes the string of inputs into a more interpretable version
-   to be analyzed by another function (this is with respect to mathematical
-   precedence.) */
 vector<string> infixToPostfix(const vector<string>& token);
+// Precondition: Has to be a string already processed from the tokenize function
+//               or a similar algorithm.
+// Purpose: changes the string of inputs into a more interpretable version
+//          to be analyzed by another function (this is with respect to 
+//          mathematical precedence.)
 
-// Purpose: returns the value of the postfix expression after evaluation.
 double evaluatePostfix(const vector<string>& postFix);
+// Precondition: Has to be a postFix vector expression processed by the
+//               infixToPostFix function or a similar algorithm.
+// Purpose: returns a value of the postfix expression after evaluation.

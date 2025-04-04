@@ -248,8 +248,8 @@ double evaluatePostfix(const vector<string>& postfix)
                 if (operands.size() < 2)
                     throw invalid_argument("No enough operands for addition.");
                 
-                int b = static_cast<double>(operands.top()); operands.pop();
-                int a = static_cast<double>(operands.top()); operands.pop();
+                double b = static_cast<double>(operands.top()); operands.pop();
+                double a = static_cast<double>(operands.top()); operands.pop();
 
                 operands.push(add(a, b));
             }
@@ -258,8 +258,8 @@ double evaluatePostfix(const vector<string>& postfix)
                 if (operands.size() < 2)
                     throw invalid_argument("No enough operands for subtraction.");
                 
-                int b = static_cast<double>(operands.top()); operands.pop();
-                int a = static_cast<double>(operands.top()); operands.pop();
+                double b = static_cast<double>(operands.top()); operands.pop();
+                double a = static_cast<double>(operands.top()); operands.pop();
 
                 operands.push(subtract(a, b));
             }
@@ -268,8 +268,8 @@ double evaluatePostfix(const vector<string>& postfix)
                 if (operands.size() < 2)
                     throw invalid_argument("No enough operands for multiplication");
                 
-                int b = static_cast<double>(operands.top()); operands.pop();
-                int a = static_cast<double>(operands.top()); operands.pop();
+                double b = static_cast<double>(operands.top()); operands.pop();
+                double a = static_cast<double>(operands.top()); operands.pop();
 
                 operands.push(multiply(a, b));
             }
@@ -278,8 +278,8 @@ double evaluatePostfix(const vector<string>& postfix)
                 if (operands.size() < 2)
                     throw invalid_argument("No enough operands for division");
 
-                int b = static_cast<double>(operands.top()); operands.pop();
-                int a = static_cast<double>(operands.top()); operands.pop();
+                double b = static_cast<double>(operands.top()); operands.pop();
+                double a = static_cast<double>(operands.top()); operands.pop();
 
                 operands.push(divide(a, b));
             }
